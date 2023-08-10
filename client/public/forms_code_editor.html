@@ -1,24 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../images/favicon.ico">
 
-    <title>Power BI Admin - Dashboard</title>
-    
+    <title>Power BI Admin - Dashboard  Code Editor </title>
+  
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="css/vendors_css.css">
 	  
 	<!-- Style-->  
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/skin_color.css">
-     
-  </head>
-
+    
+	<style type="text/css" media="screen">
+		.ace-editor { 
+			min-height: 300px;
+		}
+	</style>
+</head>
 <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
 	
 <div class="wrapper">
@@ -167,6 +171,7 @@
     </nav>
   </header>
   
+  <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar position-relative">
@@ -526,254 +531,167 @@
 			</div>
 		</div>
     </section>
-  </aside>
-
+  </aside> 
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container">
+		<!-- Content Header (Page header) -->
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="mr-auto">
+					<h3 class="page-title">Code Editor</h3>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item" aria-current="page">Forms</li>
+								<li class="breadcrumb-item active" aria-current="page">Code Editor</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
 		<!-- Main content -->
 		<section class="content">
-			<div class="row">
-				<div class="col-xxl-8 col-12">
-					<div class="box">
-						<div class="box-header">
-							<h4 class="box-title">Profit
-							</h4>
-						</div>
-						<div class="box-body">
-							<div id="charts_widget_2_chart"></div>
-							<div class="bg-primary p-30 rounded mt-30">
-								<div class="d-lg-flex justify-content-between align-items-center">
-									<div class="d-flex align-items-center">
-										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
-											  <span class="icon-Library font-size-18 text-success"><span class="path1"></span><span class="path2"></span></span>
-										</div>
-										<div class="d-flex flex-column font-weight-500">
-											<a href="#" class="text-white hover-success font-size-16">$800</a>
-											<span class="text-white-50">Duis faucibus</span>
-										</div>
-									</div>
-									<div class="d-flex align-items-center">
-										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
-											<span class="icon-Write font-size-18 text-warning"><span class="path1"></span><span class="path2"></span></span>
-										</div>
-										<div class="d-flex flex-column font-weight-500">
-											<a href="#" class="text-white hover-danger font-size-16">$400</a>
-											<span class="text-white-50">Sed quis</span>
-										</div>
-									</div>
-									<div class="d-flex align-items-center">
-										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
-											<span class="icon-Group-chat font-size-18 text-primary"><span class="path1"></span><span class="path2"></span></span>
-										</div>
-										<div class="d-flex flex-column font-weight-500">
-											<a href="#" class="text-white hover-success font-size-16">$900</a>
-											<span class="text-white-50">Phasellus</span>
-										</div>
-									</div>
-									<div class="d-flex align-items-center">
-										<div class="mr-15 bg-white h-40 w-40 l-h-50 rounded text-center">
-											<span class="icon-Attachment1 font-size-18 text-info"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
-										</div>
-										<div class="d-flex flex-column font-weight-500">
-											<a href="#" class="text-white hover-info font-size-16">$80</a>
-											<span class="text-white-50">Aliquam In</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xxl-4 col-12">
-					<div class="box">
-						<div class="box-header">
-							<h4 class="box-title">Orders Overview</h4>
-							<div class="box-controls pull-right">
-								<ul class="nav nav-pills nav-pills-sm" role="tablist">
-									<li class="nav-item">
-										<a class="nav-link py-2 px-4 b-0 active" data-toggle="tab" href="#">
-											<span class="nav-text base-font">Daily </span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="box-body">
-							<div class="row">
-								<div class="col-12">
-									<div id="charts_widget_1_chart"></div>
-								</div>
-								<div class="col-12 d-flex flex-column mt-20">
-									<div class="flex-grow-1 bg-danger p-30 flex-grow-1 bg-img"
-										style="background-position: calc(100% + 0.5rem) bottom; background-size: auto 100%; background-image: url(../images/svg-icon/color-svg/custom-3.svg)">
-										<h4 class="ont-weight-500">User Confidence</h4>
-										<p class="my-10">
-											Boost marketing & sales<br/>through product confidence.
-										</p>
-										<a href="#" class="btn btn-warning-light py-2 px-6">Learn</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-12">
-					<div class="box bg-img" style="background-image: url(../images/abstract-1.svg);background-position: right top; background-size: 30% auto;">
-						<div class="box-body">
-							<a href="#" class="box-title font-weight-600 text-muted hover-primary font-size-18">Travel Schedule</a>
-							<div class="font-weight-bold text-success mt-20 mb-10">11:30PM</div>
-							<p class="text-mute font-weight-500 font-size-16">
-								There is no one who loves pain<br> itself, who seeks after...
-							</p>
-						</div>
-					</div>
-				  </div>
-				  <div class="col-lg-4 col-12">
-					<div class="box bg-img bg-info-light" style="background-image: url(../images/abstract-2.svg);background-position: right top; background-size: 30% auto;">
-						<div class="box-body">
-							<a href="#" class="box-title font-weight-600 text-muted hover-primary font-size-18">Anuncio</a>
-							<div class="font-weight-bold text-success mt-20 mb-10">16 Jan 2019</div>
-							<p class="text-mute font-weight-500 font-size-16">
-								There is no one who loves pain<br> itself, who seeks after...
-							</p>
-						</div>
-					</div>
-				  </div>
-				  <div class="col-lg-4 col-12">
-					<div class="box bg-img" style="background-image: url(../images/abstract-3.svg);background-position: right top; background-size: 30% auto;">
-						<div class="box-body">
-							<a href="#" class="box-title font-weight-600 text-muted hover-primary font-size-18">New Release</a>
-							<div class="font-weight-bold text-success mt-20 mb-10">HTML</div>
-							<p class="text-mute font-weight-500 font-size-16">
-								There is no one who loves pain<br> itself, who seeks after...
-							</p>
-						</div>
-					</div>
-				  </div>
-				<div class="col-xl-8 col-12">
-					<div class="row">						
-						<div class="col-xl-6">
-							<div class="box">
-								<div class="box-body">	
-									<div class="d-flex flex-wrap align-items-center">							
-										<div class="mr-10 bg-danger-light h-80 w-80 l-h-80 rounded text-center">
-											  <img src="../images/svg-icon/color-svg/002-google.svg" class="h-50 align-self-center" alt="">
-										</div>
 
-										<div class="d-flex flex-column flex-grow-1 my-lg-0 my-10">
-											<a href="#" class="text-dark font-weight-600 hover-danger font-size-16 mb-5">
-												Contrary to popular belief<br>
-												Typesetting Industry
-											</a>
-											<span class="text-fade font-weight-600 font-size-14">
-												15 Jan 2020
-											</span>
-										</div>
-
-										<div class="d-flex flex-column w-p100 mt-35">
-											<span class="text-dark mr-10 font-size-16 font-weight-600 pb-15">
-												Progress
-											</span>
-
-											<div class="progress progress-xs w-p100">
-												<div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-										</div>
-
-										<div class="d-flex flex-column mt-10">
-											<div class="text-dark mr-2 font-size-16 font-weight-600 pb-10">
-												Team
-											</div>
-											<div class="d-flex">
-												<a href="#" class="mr-15 bg-danger-light h-50 w-50 l-h-50 rounded text-center overflow-hidden">
-													<img src="../images/avatar/avatar-1.png" class="h-50 align-self-end" alt="">
-												</a>
-												<a href="#" class="mr-15 bg-danger-light h-50 w-50 l-h-50 rounded text-center overflow-hidden">
-													<img src="../images/avatar/avatar-2.png" class="h-50 align-self-end" alt="">
-												</a>
-												<a href="#" class="mr-15 bg-danger-light h-50 w-50 l-h-50 rounded text-center overflow-hidden">
-													<img src="../images/avatar/avatar-3.png" class="h-50 align-self-end" alt="">
-												</a>
-												<a href="#" class="mr-15 bg-danger-light h-50 w-50 l-h-50 rounded text-center overflow-hidden">
-													<img src="../images/avatar/avatar-4.png" class="h-50 align-self-end" alt="">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>					
-							</div>
-						</div>
-						<div class="col-xl-6">
-							<div class="box">
-								<div class="box-body d-flex p-0">
-									<div class="flex-grow-1 bg-info px-30 pt-50 pb-60 flex-grow-1 bg-img min-h-300" style="background-position: right bottom; background-size: 40% auto; background-image: url(../images/svg-icon/color-svg/custom-6.svg)">
-										<h3 class="font-weight-600">Start Now</h3>
-										<p class="py-15 font-size-16">
-											Offering discounts for better<br>
-											online a store can loyalty<br>
-											weapon into driving
-										</p>
-										<a href="#" class="btn btn-info-light">Join Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12"> 
-							<div class="box">
-								<div class="box-body d-flex p-0">
-									<div class="flex-grow-1 bg-warning-light p-30 flex-grow-1 bg-img" style="background-position: left bottom; background-size: auto 100%; background-image: url(../images/svg-icon/color-svg/custom-2.svg)">
-										<div class="row">
-											<div class="col-12 col-lg-5"></div>
-											<div class="col-12 col-lg-7">
-												<h4 class="text-warning font-weight-600">Join Us now to get 15% off</h4>
-
-												<p class="text-dark my-10 font-size-16">
-													Offering discounts for your online store can be a powerful weapon in to drive loyalty
-												</p>
-												<a href="#" class="btn btn-warning">Join Now!</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-xl-4">
-					<div class="box">		
-						<div class="box-header no-border">
-							<h4 class="box-title">Revenue Overview</h4>
-							<ul class="box-controls pull-right">
-							  <li class="dropdown">
-								<a data-toggle="dropdown" href="#" class="btn btn-success-light px-10 base-font">Export</a>
-								<div class="dropdown-menu dropdown-menu-right">
-								  <a class="dropdown-item" href="#"><i class="ti-import"></i> Import</a>
-								  <a class="dropdown-item" href="#"><i class="ti-export"></i> Export</a>
-								  <a class="dropdown-item" href="#"><i class="ti-printer"></i> Print</a>
-								  <div class="dropdown-divider"></div>
-								  <a class="dropdown-item" href="#"><i class="ti-settings"></i> Settings</a>
-								</div>
-							  </li>
-							</ul>
-						</div>
-						<div class="box-body">
-							<div id="revenue5" class="text-dark"></div>
-							<p class="text-center font-size-16 pb-20">
-								Notes: There are many variations of <br>
-								of Lorem Ipsum available.
-							</p>
-							<a href="#" class="btn btn-info w-p100">Generate Report</a>
-						</div>										
-					</div>
-				</div>
+		  <!-- Example Javascript Mode -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Ace Editor (Javascript Mode)</h4>
+			  <h6 class="box-subtitle">You can find the <a href="https://github.com/ajaxorg/ace-builds" target="_blank">offical website </a></h6>
 			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+
+				<pre class="ace-editor" id="editorJS" data-plugin="ace" data-mode="javascript" style="width: 100%;">
+	/**
+	 * In fact, you're looking at ACE right now. Go ahead and play with it!
+	 *
+	 * We are currently showing off the JavaScript mode. ACE has support for 45
+	 * language modes and 24 color themes!
+	 */
+	function add(x, y) {
+		var resultString = "Hello, ACE! The result of your math is: ";
+		var result = x + y;
+		return resultString + result;
+	}
+	var addResult = add(3, 2);
+	console.log(addResult);
+				</pre>        	
+			  </div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		  <!-- Example Html Mode And Emmet Mode -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Ace Editor (Html Mode And Emmet)</h4>
+			  <h6 class="box-subtitle">You can find the <a href="https://github.com/ajaxorg/ace-builds" target="_blank">offical website </a></h6>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+
+				<pre class="ace-editor" id="editorHTML" data-plugin="ace" data-mode="html"
+				  style="width: 100%;">&lt;!--
+	* We are currently showing off the Html mode. ACE has support for 45
+	* language modes and 24 color themes!
+	 -->
+	&lt;!DOCTYPE html>
+	&lt;html lang="en">
+	&lt;head>
+	&lt;title>ACE in Action&lt;/title>
+	&lt;style>
+		#editor {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	&lt;/style>
+	&lt;/head>
+	&lt;body>
+	&lt;div id="editor">function foo(items) {
+		var x = "All this is syntax highlighted";
+		return x;
+	}&lt;/div>
+	&lt;script src="/ace-builds/src-noconflict/ace.js" charset="utf-8">&lt;/script>
+	&lt;script>
+		var editor = ace.edit("editor");
+		editor.setTheme("ace/theme/monokai");
+		editor.getSession().setMode("ace/mode/javascript");
+	&lt;/script>
+	&lt;/body>
+	&lt;/html>
+				</pre>        	
+			  </div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		  <!-- Example Css Mode -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Ace Editor (Css Editor)</h4>
+			  <h6 class="box-subtitle">You can find the <a href="https://github.com/ajaxorg/ace-builds" target="_blank">offical website </a></h6>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+
+				<pre class="ace-editor" id="editorCSS" data-plugin="ace" data-mode="text/css" style="width: 100%;">
+
+		/* Some example CSS */
+
+		@import url("something.css");
+
+		body {
+		margin: 0;
+		padding: 3em 6em;
+		font-family: tahoma, arial, sans-serif;
+		color: #000;
+		}
+
+		#navigation a {
+		font-weight: bold;
+		text-decoration: none !important;
+		}
+
+		h1 {
+		font-size: 2.5em;
+		}
+
+		h2 {
+		font-size: 1.7em;
+		}
+
+		h1:before, h2:before {
+		content: "::";
+		}
+
+		code {
+		font-family: courier, monospace;
+		font-size: 80%;
+		color: #418A8A;
+		}
+				</pre>        	
+			  </div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+
 		</section>
 		<!-- /.content -->
 	  </div>
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  
+   <footer class="main-footer">
 	  <div class="container">
 		<div class="pull-right d-none d-sm-inline-block">
 			<ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
@@ -788,7 +706,6 @@
 		  &copy; 2020 <a href="https://www.multipurposethemes.com/">Multipurpose Themes</a>. All Rights Reserved.
 	  </div>
   </footer>
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar">
 	  
@@ -1055,20 +972,20 @@
   
   <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
-  
 </div>
 <!-- ./wrapper -->
 	
+	
+	
 	<!-- Vendor JS -->
 	<script src="js/vendors.min.js"></script>
-    <script src="../assets/icons/feather-icons/feather.min.js"></script>	
-
-	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>	<script src="../assets/vendor_plugins/ace-builds-master/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 	
 	<!-- Power BI Admin App -->
 	<script src="js/template.js"></script>
 	<script src="js/demo.js"></script>
-	<script src="js/pages/dashboard.js"></script>
+	
+	<script src="js/pages/form-code-editor.js"></script>
 	
 </body>
 </html>
